@@ -1,149 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
-  <link
-   href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap"
-   rel="stylesheet"
-  />
-
-  <script
-   src="https://kit.fontawesome.com/e1bfa0598a.js"
-   crossorigin="anonymous"
-  ></script>
-  <link
-   rel="stylesheet"
-   href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-   integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-   crossorigin="anonymous"
-  />
-  <meta charset="UTF-8" />
-  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <title>WeatherLookUp</title>
-  <link rel="stylesheet" href="src/styles.css" />
- </head>
- <body>
-  <div class="container">
-   <div class="card-main" style="width: 32rem">
-    <div class="card-body largest">
-     <div class="row">
-      <div class="col-6">
-       <h1 class="card-today" id="present">Sun Aug 23, 2020</h1>
-       <h2 id="hour-minute">09:46pm</h2>
-       <i class="fas fa-sun main-emoji" id="currentEmoji"></i>
-
-       <div class="weatherSystem">
-        <span class="celsius" id="currentTempC"> °C </span>
-        |
-        <span class="fahrenheit" id="currentTempF">
-         <a href="" class="currentFLink"> °F </a></span
-        >
-       </div>
-       <h3 id="currentTemp">28</h3>
-      </div>
-
-      <div class="col-6">
-       <h4 class="card-title" id="city-searched">Location</h4>
-
-       <div class="card-week" style="width: 12rem">
-        <div class="card-body right">
-         <div class="row">
-          <div class="col-5 mini-date">Mon Aug 24</div>
-          <div class="col-2">
-           <i class="fas fa-sun mini-emoji" id="rowOneEmoji"></i>
-          </div>
-          <div class="col-5 mini-temp" id="rowOneTemp">
-           27
-           <span class="celsius" id="rowOneTempC"> °C </span>
-           |
-           <span class="fahrenheit" id="rowOneTempF">
-            <a href="" class="rowOneFLink"> °F </a></span
-           >
-          </div>
-         </div>
-
-         <div class="row">
-          <div class="col-5 mini-date">Tues Aug 25</div>
-          <div class="col-2">
-           <i class="fas fa-sun mini-emoji" id="rowTwoEmoji"></i>
-          </div>
-          <div class="col-5 mini-temp" id="rowTwoTemp">
-           27
-           <span class="celsius" id="rowTwoTempC"> °C </span>
-           |
-           <span class="fahrenheit" id="rowTwoTempF"
-            ><a href="" class="rowTwoFLink"> °F </a></span
-           >
-          </div>
-         </div>
-
-         <div class="row">
-          <div class="col-5 mini-date">Wed Aug 26</div>
-          <div class="col-2">
-           <i class="fas fa-sun mini-emoji" id="rowThreeEmoji"></i>
-          </div>
-          <div class="col-5 mini-temp" id="rowThreeTemp">
-           27
-           <span class="celsius" id="rowThreeTempC"> °C </span>
-           |
-           <span class="fahrenheit" id="rowThreeTempF"
-            ><a href="" class="rowThreeFLink"> °F </a></span
-           >
-          </div>
-         </div>
-
-         <div class="row">
-          <div class="col-5 mini-date">Thur Aug 27</div>
-          <div class="col-2">
-           <i class="fas fa-sun mini-emoji" id="rowFourEmoji"></i>
-          </div>
-          <div class="col-5 mini-temp" id="rowFourTemp">
-           27
-           <span class="celsius" id="rowFourTempC"> °C </span>
-           |
-           <span class="fahrenheit" id="rowFourTempF"
-            ><a href="" class="rowFourFLink"> °F </a></span
-           >
-          </div>
-         </div>
-
-         <div class="row">
-          <div class="col-5 mini-date">Fri Aug 28</div>
-          <div class="col-2">
-           <i class="fas fa-sun mini-emoji" id="rowFiveEmoji"></i>
-          </div>
-          <div class="col-5 mini-temp" id="rowFiveTemp">
-           27
-           <span class="celsius" id="rowFiveTempC"> °C </span>
-           |
-           <span class="fahrenheit" id="rowFiveTempF"
-            ><a href="" class="rowFiveFLink"> °F </a></span
-           >
-          </div>
-         </div>
-        </div>
-       </div>
-      </div>
-     </div>
-    </div>
-   </div>
-
-   <form id="search-form">
-    <input
-     class="city"
-     type="text"
-     placeholder="Enter city"
-     autocomplete="off"
-     autofocus="on"
-     id="search-text-input"
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap"
+      rel="stylesheet"
     />
-    <button type="submit" class="btn btn-info btn-sm" id="city-search-form">
-     Search
-    </button>
-   </form>
-  </div>
 
-  <script src="src/script.js"></script>
- </body>
+    <script
+      src="https://kit.fontawesome.com/e1bfa0598a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <meta charset="UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>WeatherLookUp</title>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card-main" style="width: 32rem">
+        <div class="card-body largest">
+          <div class="row">
+            <div class="col-6">
+              <h1 class="card-today" id="present">Sun Aug 23, 2020</h1>
+              <h2 id="hour-minute">09:46pm</h2>
+              <i class="fas fa-sun main-emoji" id="currentEmoji"></i>
+
+              <div class="weatherSystem">
+                <span class="celsius" id="currentTempC"> °C </span>
+                |
+                <span class="fahrenheit" id="currentTempF">
+                  <a href="" class="currentFLink"> °F </a></span
+                >
+              </div>
+              <h3 id="currentTemp">28</h3>
+            </div>
+
+            <div class="col-6">
+              <h4 class="card-title" id="city-searched">Location</h4>
+
+              <div class="card-week" style="width: 12rem">
+                <div class="card-body right">
+                  <div class="row">
+                    <div class="col-5 mini-date">Mon Aug 24</div>
+                    <div class="col-2">
+                      <i class="fas fa-sun mini-emoji" id="rowOneEmoji"></i>
+                    </div>
+                    <div class="col-5 mini-temp" id="rowOneTemp">
+                      27
+                      <span class="celsius" id="rowOneTempC"> °C </span>
+                      |
+                      <span class="fahrenheit" id="rowOneTempF">
+                        <a href="" class="rowOneFLink"> °F </a></span
+                      >
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-5 mini-date">Tues Aug 25</div>
+                    <div class="col-2">
+                      <i class="fas fa-sun mini-emoji" id="rowTwoEmoji"></i>
+                    </div>
+                    <div class="col-5 mini-temp" id="rowTwoTemp">
+                      27
+                      <span class="celsius" id="rowTwoTempC"> °C </span>
+                      |
+                      <span class="fahrenheit" id="rowTwoTempF"
+                        ><a href="" class="rowTwoFLink"> °F </a></span
+                      >
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-5 mini-date">Wed Aug 26</div>
+                    <div class="col-2">
+                      <i class="fas fa-sun mini-emoji" id="rowThreeEmoji"></i>
+                    </div>
+                    <div class="col-5 mini-temp" id="rowThreeTemp">
+                      27
+                      <span class="celsius" id="rowThreeTempC"> °C </span>
+                      |
+                      <span class="fahrenheit" id="rowThreeTempF"
+                        ><a href="" class="rowThreeFLink"> °F </a></span
+                      >
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-5 mini-date">Thur Aug 27</div>
+                    <div class="col-2">
+                      <i class="fas fa-sun mini-emoji" id="rowFourEmoji"></i>
+                    </div>
+                    <div class="col-5 mini-temp" id="rowFourTemp">
+                      27
+                      <span class="celsius" id="rowFourTempC"> °C </span>
+                      |
+                      <span class="fahrenheit" id="rowFourTempF"
+                        ><a href="" class="rowFourFLink"> °F </a></span
+                      >
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-5 mini-date">Fri Aug 28</div>
+                    <div class="col-2">
+                      <i class="fas fa-sun mini-emoji" id="rowFiveEmoji"></i>
+                    </div>
+                    <div class="col-5 mini-temp" id="rowFiveTemp">
+                      27
+                      <span class="celsius" id="rowFiveTempC"> °C </span>
+                      |
+                      <span class="fahrenheit" id="rowFiveTempF"
+                        ><a href="" class="rowFiveFLink"> °F </a></span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <form id="search-form">
+        <input
+          class="city"
+          type="text"
+          placeholder="Enter city"
+          autocomplete="off"
+          autofocus="on"
+          id="search-text-input"
+        />
+        <button type="submit" class="btn btn-info btn-sm" id="city-search-form">
+          Search
+        </button>
+      </form>
+      <div class="footer">
+        <a href="" class="linkToGithub">open-sourced</a>
+        by Ruth Kim
+      </div>
+    </div>
+
+    <script src="src/script.js"></script>
+  </body>
 </html>

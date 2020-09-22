@@ -12,11 +12,12 @@ h4 {
 
 h3 {
   line-height: 1.3em;
+  font-size: 36px;
 }
 
 form {
-  margin: 30px auto 60px;
-  bottom: 0 auto 60px;
+  margin: 30px auto;
+  bottom: 0 auto 15px;
   text-align: center;
   vertical-align: bottom;
 }
@@ -31,7 +32,7 @@ form {
 
 .container {
   border: 0;
-  margin: 60px auto;
+  margin: 60px auto 30px;
   text-align: center;
 }
 
@@ -46,7 +47,6 @@ form {
   display: block;
   margin: 0 auto;
 }
-
 a {
   color: black;
 }
@@ -57,7 +57,7 @@ a {
 
 .main-emoji {
   color: rgba(255, 230, 0, 0.849);
-  font-size: 80px;
+  font-size: 60px;
   margin: 15px;
   text-align: center;
 }
@@ -73,7 +73,6 @@ a {
   margin: 15px auto;
   vertical-align: -webkit-baseline-middle;
 }
-
 .city {
   padding: 1px 7px;
 }
@@ -93,7 +92,7 @@ a {
 
 .mini-emoji {
   color: rgba(255, 230, 0, 0.849);
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .mini-temp {
@@ -115,6 +114,18 @@ a {
   color: #3b6978;
   cursor: pointer;
   text-decoration: none;
+}
+
+.footer {
+  color: rgb(124, 124, 124);
+  font-size: 13px;
+  font-weight: 580;
+  text-align: center;
+}
+
+.linkToGithub {
+  color: #6eacc0;
+  text-decoration: underline;
 }
 
 #city-searched {
