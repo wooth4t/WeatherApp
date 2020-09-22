@@ -1,0 +1,122 @@
+body {
+  font-family: "Unica One", cursive;
+}
+h1,
+h2,
+h3,
+h4 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+h3 {
+  line-height: 1.3em;
+}
+
+form {
+  margin: 30px auto 60px;
+  bottom: 0 auto 60px;
+  text-align: center;
+  vertical-align: bottom;
+}
+
+.container,
+.right,
+.card-week,
+.col-2,
+.col-5 {
+  padding: 0;
+}
+
+.container {
+  border: 0;
+  margin: 60px auto;
+  text-align: center;
+}
+
+.largest {
+  padding: 20px 20px 10px 20px;
+}
+
+.card-main {
+  background-color: #658e9211;
+  border: 1px solid #84a9ac4d;
+  border-radius: 4px;
+  display: block;
+  margin: 0 auto;
+}
+
+a {
+  color: black;
+}
+
+.celsius {
+  font-weight: bold;
+}
+
+.main-emoji {
+  color: rgba(255, 230, 0, 0.849);
+  font-size: 80px;
+  margin: 15px;
+  text-align: center;
+}
+
+.weatherSystem {
+  margin: 0 0 6px 0;
+}
+
+.card-week {
+  font-size: 11px;
+  background-color: white;
+  line-height: 3.5em;
+  margin: 15px auto;
+  vertical-align: -webkit-baseline-middle;
+}
+
+.city {
+  padding: 1px 7px;
+}
+
+.col-5,
+.col-2 {
+  text-align: right;
+}
+
+.col-5 {
+  font-size: 14px;
+}
+
+.col-2 {
+  vertical-align: text-bottom;
+}
+
+.mini-emoji {
+  color: rgba(255, 230, 0, 0.849);
+  font-size: 12px;
+}
+
+.mini-temp {
+  text-align: center;
+}
+
+.btn {
+  background-color: #3b6978;
+  border: 1px solid #3b6978;
+  vertical-align: baseline;
+}
+
+.currentFLink:hover,
+.rowOneFLink:hover,
+.rowTwoFLink:hover,
+.rowThreeFLink:hover,
+.rowFourFLink:hover,
+.rowFiveFLink:hover {
+  color: #3b6978;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#city-searched {
+  text-transform: capitalize;
+}
