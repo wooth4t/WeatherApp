@@ -32,21 +32,37 @@
       <div class="col-6 left">
        <h1 id="date"></h1>
        <h2>Last updated <span id="hour-minute">00:00</span></h2>
-       <div class="icon-border">
-        <img src="" id="icon" class="main-emoji" />
+
+       <div class="container card-left">
+        <div class="row middle">
+         <div class="col-6 middleLeft">
+          <div class="icon-border">
+           <img src="" id="icon" class="main-emoji" />
+          </div>
+         </div>
+
+         <div class="col-6 middleRight">
+          <div class="weatherSystem">
+           <h3 id="temperature"></h3>
+           <span class="units">
+            <span class="celsius" id="currentTempC">
+             <a href="#" id="celsius-link" class="active">°C</a></span
+            >
+            |
+            <span class="fahrenheit" id="currentTempF">
+             <a href="#" id="fahrenheit-link">°F</a></span
+            >
+           </span>
+           <div id="description"></div>
+           <div>humidity <span id="humidity"></span> %</div>
+           <div>wind <span id="wind"></span> km/h</div>
+          </div>
+         </div>
+        </div>
        </div>
-       <div class="weatherSystem">
-        <div id="description"></div>
-        <h3 id="temperature"></h3>
-        <span class="units">
-         <span class="celsius" id="currentTempC">
-          <a href="#" id="celsius-link" class="active">°C</a></span
-         >
-         |
-         <span class="fahrenheit" id="currentTempF">
-          <a href="#" id="fahrenheit-link">°F</a></span
-         >
-        </span>
+
+       <div class="row bottom">
+        <div class="col-12"></div>
        </div>
       </div>
 

@@ -16,7 +16,7 @@ h1 {
 h2 {
  font-size: 14px;
  font-weight: 18px;
- margin: 0;
+ margin-bottom: 10px;
  text-align: center;
 }
 
@@ -65,16 +65,28 @@ image {
  margin: 0 auto;
 }
 
+.card-left {
+ margin: 0;
+}
+
 a {
  color: #248faf;
 }
 
-.icon-border {
- height: 100px;
+.middleLeft {
+ text-align: right;
+}
+
+.middleRight {
+ text-align: left;
 }
 
 .weatherSystem {
+ color: black;
+ font-size: 13px;
  margin: 0;
+ padding-top: 20px;
+ text-align: left;
 }
 
 .units .active {
@@ -148,12 +160,6 @@ a {
 #city {
  height: 24px;
  text-transform: capitalize;
-}
-
-#description {
- color: black;
- font-size: 13px;
- height: 20px;
 }
 
 #celsius-link:hover {
