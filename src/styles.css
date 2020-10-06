@@ -1,133 +1,165 @@
 body {
-  font-family: "Unica One", cursive;
+ font-family: "Unica One", cursive;
 }
 h1,
-h2,
 h3,
 h4 {
-  text-align: center;
-  font-size: 18px;
-  font-weight: bolder;
+ text-align: center;
+ font-size: 20px;
+ font-weight: bolder;
+}
+
+h1 {
+ height: 20px;
+}
+
+h2 {
+ font-size: 14px;
+ font-weight: 18px;
+ margin: 0;
+ text-align: center;
 }
 
 h3 {
-  line-height: 1.3em;
-  font-size: 36px;
+ display: inline;
+ font-size: 38px;
+ line-height: 1.3em;
+}
+
+h4 {
+ margin: 0;
 }
 
 form {
-  margin: 30px auto;
-  bottom: 0 auto 15px;
-  text-align: center;
-  vertical-align: bottom;
+ margin: 30px auto;
+ bottom: 0 auto 15px;
+ text-align: center;
+ vertical-align: bottom;
+}
+
+image {
+ margin: 0;
 }
 
 .container,
-.right,
 .card-week,
-.col-2,
-.col-5 {
-  padding: 0;
+.col-3 {
+ padding: 0;
 }
 
 .container {
-  border: 0;
-  margin: 60px auto 30px;
-  text-align: center;
+ border: 0;
+ margin: 60px auto;
+ text-align: center;
 }
 
 .largest {
-  padding: 20px 20px 10px 20px;
+ padding: 20px 20px 10px 20px;
 }
 
 .card-main {
-  background-color: #658e9211;
-  border: 1px solid #84a9ac4d;
-  border-radius: 4px;
-  display: block;
-  margin: 0 auto;
+ border: 1px solid #84a9ac4d;
+ background: linear-gradient(0.5turn, #f1f3f3, #c1d2da, #f1f3f3);
+ border-radius: 4px;
+ display: block;
+ margin: 0 auto;
 }
+
 a {
-  color: black;
+ color: #248faf;
 }
 
-.celsius {
-  font-weight: bold;
-}
-
-.main-emoji {
-  color: rgba(255, 230, 0, 0.849);
-  font-size: 60px;
-  margin: 15px;
-  text-align: center;
+.icon-border {
+ height: 100px;
 }
 
 .weatherSystem {
-  margin: 0 0 6px 0;
+ margin: 0;
+}
+
+.units .active {
+ color: black;
+ cursor: default;
+}
+
+.units .active:hover {
+ text-decoration: none;
 }
 
 .card-week {
-  font-size: 11px;
-  background-color: white;
-  line-height: 3.5em;
-  margin: 15px auto;
-  vertical-align: -webkit-baseline-middle;
-}
-.city {
-  padding: 1px 7px;
+ font-size: 13px;
+ line-height: 2.5em;
+ vertical-align: -webkit-baseline-middle;
+ margin: 0;
+ padding: 0;
 }
 
-.col-5,
-.col-2 {
-  text-align: right;
-}
-
-.col-5 {
-  font-size: 14px;
-}
-
-.col-2 {
-  vertical-align: text-bottom;
+.col-6 {
+ margin: 0;
+ padding: 0;
 }
 
 .mini-emoji {
-  color: rgba(255, 230, 0, 0.849);
-  font-size: 16px;
+ height: 28px;
+ text-align: center;
+}
+
+.mini-time {
+ font-size: 16px;
+ text-align: right;
 }
 
 .mini-temp {
-  text-align: center;
+ font-size: 16px;
+ text-align: left;
 }
 
 .btn {
-  background-color: #3b6978;
-  border: 1px solid #3b6978;
-  vertical-align: baseline;
-}
-
-.currentFLink:hover,
-.rowOneFLink:hover,
-.rowTwoFLink:hover,
-.rowThreeFLink:hover,
-.rowFourFLink:hover,
-.rowFiveFLink:hover {
-  color: #3b6978;
-  cursor: pointer;
-  text-decoration: none;
+ background-color: #3b6978;
+ border: 1px solid #3b6978;
+ box-shadow: 2px 2px 2px rgb(158, 157, 157);
+ vertical-align: baseline;
 }
 
 .footer {
-  color: rgb(124, 124, 124);
-  font-size: 13px;
-  font-weight: 580;
-  text-align: center;
+ color: rgb(124, 124, 124);
+ font-size: 13px;
+ font-weight: 580;
+ text-align: center;
 }
 
 .linkToGithub {
-  color: #6eacc0;
-  text-decoration: underline;
+ color: #387d94;
+ text-decoration: underline;
 }
 
-#city-searched {
-  text-transform: capitalize;
+.weatherSystem .units {
+ line-height: -30px;
+ position: relative;
+ top: -12px;
+}
+
+#icon {
+ color: rgba(255, 230, 0, 0.849);
+ font-size: 45px;
+ text-align: center;
+}
+
+#city {
+ height: 24px;
+ text-transform: capitalize;
+}
+
+#description {
+ color: black;
+ font-size: 13px;
+ height: 20px;
+}
+
+#celsius-link:hover {
+ text-decoration: none;
+}
+
+#fahrenheit-link:hover {
+ text-decoration: none;
 }
