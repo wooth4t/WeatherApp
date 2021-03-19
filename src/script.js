@@ -19,7 +19,7 @@ function formatDate(timestamp) {
  let months = [
   "Jan",
   "Feb",
-  "Ma",
+  "Mar",
   "Apr",
   "May",
   "Jun",
